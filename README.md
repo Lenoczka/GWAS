@@ -30,6 +30,8 @@
 
 - **Модель:** логистическая регрессия (case–control, `--logistic`).
 - **Коррекция:** первые 2 главные компоненты (`--covar-number 1-2`) + пол (`--logistic sex`) как ковариата.
-### 4 Расчет PRS (Polygenic Risk Score) ИБС
+### 4 Аннотация и интерпретация результатов GWAS
+- Выполнена в онлайн-инструменте https://fuma.ctglab.nl/ FUMA GWAS (Functional Mapping and Annotation of Genome-Wide Association Studies)
+### 5 Расчет PRS (Polygenic Risk Score) ИБС
 PGS004595.txt был скачен из базы данных https://www.pgscatalog.org/
 - **Расчет PRS:** `--score PGS004595.txt 1 4 5`.
