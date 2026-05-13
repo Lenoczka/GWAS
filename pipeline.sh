@@ -52,9 +52,9 @@ plink19 --bfile ${BASE_DIR}/QC_maf_hwe/filtered_data_hwe_filtered --logistic --c
 
 plink19 --bfile ${BASE_DIR}/QC_maf_hwe/filtered_data_hwe_filtered --logistic sex --covar ${BASE_DIR}/pca_stratification/pca_results.eigenvec --covar-number 1-2 --out ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex
 
-awk 'NR==1 || ($9 < 5e-8 && NR>1)' ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex.assoc.logistic > ${BASE_DIR}/gwas_logistic/task4_significant.txt
+awk 'NR==1 || ($9 < 5e-8 && NR>1)' ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex.assoc.logistic > ${BASE_DIR}/gwas_logistic/significant.txt
 
-awk 'NR>1 && $9 < 5e-8 {print $2}' ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex.assoc.logistic > ${BASE_DIR}/gwas_logistic/task4_snplist.txt
+awk 'NR>1 && $9 < 5e-8 {print $2}' ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex.assoc.logistic > ${BASE_DIR}/gwas_logistic/snplist.txt
 
 if [ -f "./draw_plots.py" ]; then
     ./draw_plots.py ${BASE_DIR}/gwas_logistic/gwas_results_corrected_sex.assoc.logistic
