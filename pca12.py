@@ -49,5 +49,5 @@ plt.title('PCA of Genetic Data')
 plt.legend()  # Добавляем легенду
 plt.grid(True, alpha=0.3)
 plt.tight_layout()
-plt.savefig('task_3_pca12.jpg', dpi=300)
+plt.savefig('pca12.jpg', dpi=300)
 plt.close()
