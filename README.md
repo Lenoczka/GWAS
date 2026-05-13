@@ -28,7 +28,7 @@
 
 ### 3️ Полногеномный ассоциативный анализ (GWAS)
 
-- **Модель:** логистическая регрессия (case–control, `--logistic`).
+- **Модель:** логистическая регрессия (case-control, `--logistic`).
 - **Коррекция:** первые 2 главные компоненты (`--covar-number 1-2`) + пол (`--logistic sex`) как ковариата.
 ### 4 Аннотация и интерпретация результатов GWAS
 - Выполнена в онлайн-инструменте https://fuma.ctglab.nl/ FUMA GWAS (Functional Mapping and Annotation of Genome-Wide Association Studies)
