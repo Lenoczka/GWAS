@@ -10,5 +10,5 @@ stat, p_value = mannwhitneyu(cases, controls)
 
 print(f"p-value = {p_value}")
 
-with open('/home/lenoczka/BInf3_ITA.ID_1577890-1/src/task6_answers.txt', 'a') as f: # a от append -  дозапись текста в файл
+with open('/home/lenoczka/BInf3_ITA.ID_1577890-1/src/answers.txt', 'a') as f: # a от append -  дозапись текста в файл
     f.write(f"p = {p_value}\n")
