@@ -31,4 +31,5 @@
 - **Модель:** логистическая регрессия (case–control, --logistic).
 - **Коррекция:** первые 2 главные компоненты (--covar-number 1-2) + **пол (--logistic sex)** как ковариата.
 ### 4 Расчет PRS (Polygenic Risk Score) ИБС
-- **Расчет PRS:** --score.
+PGS004595.txt был скачен из базы данных https://www.pgscatalog.org/
+- **Расчет PRS:** --score PGS004595.txt 1 4 5.
